@@ -1,7 +1,5 @@
 package de.myzelyam.api.vanish;
 
-import de.myzelyam.premiumvanish.bungeecord.PremiumVanishProxy;
-import de.myzelyam.premiumvanish.main.utilities.Validation;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.List;
@@ -10,7 +8,7 @@ import java.util.UUID;
 /**
  * API for PremiumVanish on BungeeCord
  * Method content is redacted
- * */
+ */
 public class BungeeVanishAPI {
 
     /**

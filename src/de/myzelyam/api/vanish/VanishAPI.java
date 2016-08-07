@@ -1,18 +1,15 @@
 package de.myzelyam.api.vanish;
 
-import de.myzelyam.premiumvanish.main.PremiumVanish;
-import de.myzelyam.premiumvanish.main.utilities.Validation;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
 /**
  * API for PremiumVanish on Bukkit
  * Method content is redacted
- * */
+ */
 public class VanishAPI {
 
     /**
