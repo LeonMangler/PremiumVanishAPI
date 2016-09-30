@@ -1,5 +1,7 @@
 package de.myzelyam.api.vanish;
 
+import de.myzelyam.api.vanish.scoreboard.ScoreboardModule;
+
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
@@ -43,6 +45,17 @@ public class VanishAPI {
     }
 
     /**
+     * Checks if a player is invisible, online or not
+     *
+     * @param uuid - the player's UUID.
+     * @return TRUE if the player is invisible, FALSE otherwise.
+     */
+    public static boolean isInvisibleOffline(UUID uuid) {
+        // ...
+        return false;
+    }
+
+    /**
      * Hides a player using PremiumVanish
      *
      * @param p - the player.
@@ -70,6 +83,15 @@ public class VanishAPI {
     public static boolean canSee(Player viewer, Player viewed) {
         // ...
         return false;
+    }
+
+    /**
+     * Registers a new module for the scoreboard which shows up for vanished players
+     *
+     * @param module - the new module to register
+     */
+    public static void registerScoreboardModule(ScoreboardModule module) {
+        // ...
     }
 
     public static FileConfiguration getConfiguration() {
