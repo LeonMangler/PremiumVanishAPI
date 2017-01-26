@@ -15,15 +15,15 @@ import java.util.UUID;
 public class VanishAPI {
 
     /**
-     * @return A list of strings which represent the UUIDs of all online hidden players
+     * @return A list of the UUIDs of all online hidden players
      */
-    public static List<String> getInvisiblePlayers() {
+    public static List<UUID> getInvisiblePlayers() {
         // ...
         return null;
     }
 
     /**
-     * @return A list of the UUIDs of all hidden players, online or offline
+     * @return A list of the UUIDs of all hidden players, both online and offline players
      * <p/>
      * Deprecated: Will cause minor lag if mysql is enabled, use asynchronously or sparingly
      */
@@ -46,6 +46,8 @@ public class VanishAPI {
 
     /**
      * Checks if a player is invisible, online or not
+     * <p/>
+     * Deprecated: Will cause minor lag if mysql is enabled, use asynchronously or sparingly
      *
      * @param uuid - the player's UUID.
      * @return TRUE if the player is invisible, FALSE otherwise.
