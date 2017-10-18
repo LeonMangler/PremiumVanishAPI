@@ -2,7 +2,7 @@ package de.myzelyam.api.vanish;
 
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
-import java.util.List;
+import java.util.Collection;
 import java.util.UUID;
 
 /**
@@ -12,20 +12,20 @@ import java.util.UUID;
 public class BungeeVanishAPI {
 
     /**
-     * @return A list of the UUIDs of all online hidden players
+     * @return A collection of the UUIDs of all online hidden players
      */
-    public static List<UUID> getInvisiblePlayers() {
+    public static Collection<UUID> getInvisiblePlayers() {
         // ...
         return null;
     }
 
     /**
-     * @return A list of the UUIDs of all hidden players, online or offline
+     * @return A collection of the UUIDs of all hidden players, online or offline
      * <p/>
      * Deprecated: Will cause minor lag, use asynchronously or sparingly
      */
     @Deprecated
-    public static List<UUID> getAllInvisiblePlayers() {
+    public static Collection<UUID> getAllInvisiblePlayers() {
         // ...
         return null;
     }
