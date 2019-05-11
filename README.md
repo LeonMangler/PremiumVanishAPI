@@ -15,7 +15,7 @@ https://www.spigotmc.org/resources/premiumvanish-stay-hidden-bungee-support.1440
   <dependency>
     <groupId>com.github.MyzelYam</groupId>
     <artifactId>PremiumVanishAPI</artifactId>
-    <version>v2.0.1</version>
+    <version>2.0.2</version>
   </dependency>
 </dependencies>
 ```
