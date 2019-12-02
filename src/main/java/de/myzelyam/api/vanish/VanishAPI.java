@@ -3,7 +3,7 @@ package de.myzelyam.api.vanish;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -12,20 +12,20 @@ import java.util.UUID;
 public class VanishAPI {
 
     /**
-     * @return A collection of the UUIDs of all online vanished players
+     * @return A list of the UUIDs of all online vanished players
      */
-    public static Collection<UUID> getInvisiblePlayers() {
+    public static List<UUID> getInvisiblePlayers() {
         // ...
         return null;
     }
 
     /**
-     * @return A collection of the UUIDs of all vanished players, both online and offline players
+     * @return A list of the UUIDs of all vanished players, both online and offline players
      * <p/>
      * Deprecated: Will cause minor lag if mysql is enabled, use asynchronously or sparingly
      */
     @Deprecated
-    public static Collection<UUID> getAllInvisiblePlayers() {
+    public static List<UUID> getAllInvisiblePlayers() {
         // ...
         return null;
     }
