@@ -24,9 +24,21 @@ public class PlayerVanishStateChangeEvent extends Event implements Cancellable {
         this.cause = cause;
     }
 
+    public static HandlerList getHandlerList() {
+        return handlers;
+    }
+
     @Override
     public boolean isCancelled() {
         return isCancelled;
+    }
+
+    /**
+     * Cancels the operation, it's recommended to send a message to the cause
+     */
+    @Override
+    public void setCancelled(boolean cancel) {
+        isCancelled = cancel;
     }
 
     /**
@@ -43,7 +55,6 @@ public class PlayerVanishStateChangeEvent extends Event implements Cancellable {
         return name;
     }
 
-
     /**
      * @return The UUID of the player who is vanishing/reappearing
      */
@@ -52,29 +63,17 @@ public class PlayerVanishStateChangeEvent extends Event implements Cancellable {
     }
 
     /**
-     * @return The name of the command sender who caused the vanish state change or null if the cause is either not
-     * specified or it's PremiumVanish itself, please note that if this returns 'CONSOLE' then it's the console which
-     * caused this state change
+     * @return The name of the command sender who caused the vanish state change or null if the cause is
+     * either not specified or it's PremiumVanish itself, please note that if this returns 'CONSOLE' then it's
+     * the console which caused this state change
      */
     @Nullable
     public String getCause() {
         return cause;
     }
 
-    /**
-     * Cancels the operation, it's recommended to send a message to the cause
-     */
-    @Override
-    public void setCancelled(boolean cancel) {
-        isCancelled = cancel;
-    }
-
     @Override
     public HandlerList getHandlers() {
-        return handlers;
-    }
-
-    public static HandlerList getHandlerList() {
         return handlers;
     }
 }

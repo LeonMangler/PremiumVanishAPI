@@ -1,13 +1,15 @@
 package de.myzelyam.api.vanish;
 
+import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 import java.util.List;
 import java.util.UUID;
 
 /**
- * API for PremiumVanish on BungeeCord
- * Method content is redacted
+ * <p>API for PremiumVanish on Bungee</p>
+ * <p>This is to be used as a dependency and doesn't include the actual implementation</p>
+ * <p><b>Please don't add this to your plugin jar, the real API comes with PremiumVanish!</b></p>
  */
 public class BungeeVanishAPI {
 
@@ -55,5 +57,10 @@ public class BungeeVanishAPI {
      */
     public static void showPlayer(ProxiedPlayer p) {
         // ...
+    }
+
+    static {
+        ProxyServer.getInstance().getLogger().severe("[PremiumVanish] A plugin has wrongfully loaded the PremiumVanishAPI dependency! " +
+                "Its developer must not add it to their plugin jar. The actual API comes with PremiumVanish! The API won't work.");
     }
 }
