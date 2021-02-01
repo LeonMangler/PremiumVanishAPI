@@ -18,7 +18,7 @@ The actual API will be loaded by PremiumVanish itself.
 <dependencies>
   <!-- PremiumVanishAPI -->
   <dependency>
-    <groupId>com.github.MyzelYam</groupId>
+    <groupId>com.github.LeonMangler</groupId>
     <artifactId>PremiumVanishAPI</artifactId>
     <version>2.6.3</version>
   </dependency>
