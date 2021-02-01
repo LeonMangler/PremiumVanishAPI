@@ -20,7 +20,7 @@ The actual API will be loaded by PremiumVanish itself.
   <dependency>
     <groupId>com.github.MyzelYam</groupId>
     <artifactId>PremiumVanishAPI</artifactId>
-    <version>2.0.3</version>
+    <version>2.6.3</version>
   </dependency>
 </dependencies>
 ```

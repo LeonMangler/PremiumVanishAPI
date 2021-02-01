@@ -10,7 +10,7 @@ import java.util.UUID;
 /**
  * <p>API for PremiumVanish on Bukkit</p>
  * <p>This is to be used as a dependency and doesn't include the actual implementation</p>
- * <p><b>Please don't add this to your plugin jar, the real API comes with PremiumVanish!</b></p>
+ * <p><b>Please don't add this to your plugin jar. The real API comes with PremiumVanish!</b></p>
  */
 public class VanishAPI {
 
