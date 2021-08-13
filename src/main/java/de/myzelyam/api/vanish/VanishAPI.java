@@ -67,6 +67,17 @@ public class VanishAPI {
     }
 
     /**
+     * Hides a player using PremiumVanish
+     *
+     * @param player    the player
+     * @param isSilent  controls whether there should be no broadcast (like the -s flag)
+     * @param showInTab controls whether the player should be shown in the tablist (like the -t flag)
+     */
+    public static void hidePlayer(Player player, boolean isSilent, boolean showInTab) {
+        // ...
+    }
+
+    /**
      * * Shows a player using PremiumVanish
      *
      * @param p - the player.
@@ -74,6 +85,49 @@ public class VanishAPI {
     public static void showPlayer(Player p) {
         // ...
     }
+
+    /**
+     * Shows a player using PremiumVanish
+     *
+     * @param player   the player
+     * @param isSilent controls whether there should be no broadcast (like the -s flag)
+     */
+    public static void showPlayer(Player player, boolean isSilent) {
+        // ...
+    }
+
+    /**
+     * Gets a player's use vanish permission level
+     *
+     * @param player the player
+     */
+    public static int getLayeredUsePermissionLevel(Player player) {
+        // ...
+        return 0;
+    }
+
+    /**
+     * Sets a player's use vanish permission level.
+     * Cannot be smaller than 1 or greater than the maximum configured in the config file.
+     * Will reset after the player quits.
+     *
+     * @param player       the player
+     * @param updatedLevel The new use permission level
+     */
+    public static void setLayeredUsePermissionLevel(Player player, int updatedLevel){
+        // ...
+    }
+
+    /**
+     * Gets a player's see vanish permission level
+     *
+     * @param player the player
+     */
+    public static int getLayeredSeePermissionLevel(Player player) {
+        // ...
+        return 0;
+    }
+
 
     /**
      * * Checks if a player is allowed to see another player
