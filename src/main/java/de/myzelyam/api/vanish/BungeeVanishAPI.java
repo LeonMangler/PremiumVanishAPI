@@ -59,6 +59,39 @@ public class BungeeVanishAPI {
         // ...
     }
 
+
+    /**
+     * Gets a player's use vanish permission level
+     *
+     * @param player the player
+     */
+    public static int getLayeredUsePermissionLevel(ProxiedPlayer player) {
+        // ...
+        return -1;
+    }
+
+    /**
+     * Gets a player's see vanish permission level
+     *
+     * @param player the player
+     */
+    public static int getLayeredSeePermissionLevel(ProxiedPlayer player) {
+        // ...
+        return -1;
+    }
+
+    /**
+     * Checks if a player is allowed to see another player
+     *
+     * @param viewer the viewer
+     * @param viewed the viewed player
+     * @return TRUE if viewed is not vanished or viewer has the permission to see viewed
+     */
+    public static boolean canSee(ProxiedPlayer viewer, ProxiedPlayer viewed) {
+        // ...
+        return false;
+    }
+
     static {
         ProxyServer.getInstance().getLogger().severe("[PremiumVanish] A plugin has wrongfully loaded the PremiumVanishAPI dependency! " +
                 "Its developer must not add it to their plugin jar. The actual API comes with PremiumVanish! The API won't work.");
