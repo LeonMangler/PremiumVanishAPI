@@ -20,7 +20,7 @@ The actual API will be loaded by PremiumVanish itself.
   <dependency>
     <groupId>com.github.LeonMangler</groupId>
     <artifactId>PremiumVanishAPI</artifactId>
-    <version>2.9.0-4</version>
+    <version>2.9.18-2</version>
     <scope>provided</scope>
   </dependency>
 </dependencies>
